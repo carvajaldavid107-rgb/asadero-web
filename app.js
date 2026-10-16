@@ -3,7 +3,7 @@ const BUSINESS = {
   name: "Asadero El Pollo Feliz",
   // Escribe el número con indicativo de país, solo dígitos. Colombia: 57 + número.
   // Ejemplo de formato: "573001234567". Reemplázalo por el número real del negocio.
-  whatsapp: "573003980400",
+  whatsapp: "573234385279",
   address: "Agrega aquí la dirección real del negocio"
 };
 
@@ -200,7 +200,7 @@ orderForm.addEventListener("submit", event => {
 
   // Cambia BUSINESS.whatsapp por el número real antes de publicar.
   const phone = BUSINESS.whatsapp.replace(/\D/g, "");
-  if (!phone || phone === "573003980400" || phone.length < 10) {
+  if (!phone || phone === "573234385279" || phone.length < 10) {
     formMessage.textContent = "La página todavía no tiene el WhatsApp real del negocio. Configúralo en app.js antes de publicar.";
     return;
   }
@@ -235,7 +235,7 @@ document.querySelectorAll("#mainNav a").forEach(link => {
 });
 
 document.getElementById("businessAddress").textContent = BUSINESS.address;
-document.getElementById("businessPhone").textContent = BUSINESS.whatsapp === "573003980400" ? "Configura el número en app.js" : `+${BUSINESS.whatsapp}`;
+document.getElementById("businessPhone").textContent = BUSINESS.whatsapp === "573234385279" ? "Configura el número en app.js" : `+${BUSINESS.whatsapp}`;
 document.getElementById("year").textContent = new Date().getFullYear();
 updateAddressRequirement();
 renderProducts();
