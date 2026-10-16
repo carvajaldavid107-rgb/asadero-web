@@ -3,7 +3,7 @@ const BUSINESS = {
   name: "Asadero El Pollo Feliz",
   // Escribe el número con indicativo de país, solo dígitos. Colombia: 57 + número.
   // Ejemplo de formato: "573001234567". Reemplázalo por el número real del negocio.
-  whatsapp: "573003980400,
+  whatsapp: "573003980400",
   address: "Agrega aquí la dirección real del negocio"
 };
 
