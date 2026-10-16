@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pollo asado, combos familiares y acompañamientos. Haz tu pedido por WhatsApp.">
+  <title>Asadero El Pollo Feliz | Pedidos por WhatsApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-icon">🍗</span>
+      <span><strong>El Pollo Feliz</strong><small>ASADERO</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="button button-green top-order" href="#menu">Pedir ahora</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">RECIÉN PREPARADO • SABOR CASERO</p>
+        <h1>El sabor que<br><span>te hace feliz</span></h1>
+        <p>Pollo asado, combos para compartir y acompañamientos para disfrutar en familia.</p>
+        <div class="hero-actions">
+          <a class="button button-yellow" href="#menu">Ver el menú ↓</a>
+          <a class="button button-outline" href="#pedido">Armar mi pedido</a>
+        </div>
+        <p class="demo-note">Página de demostración: cambia los precios y los datos antes de usarla con un negocio real.</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <article><span>🍗</span><strong>Preparado al momento</strong><p>Productos para compartir.</p></article>
+      <article><span>⭐</span><strong>Sabor de la casa</strong><p>Recetas que se disfrutan.</p></article>
+      <article><span>🛵</span><strong>Consulta domicilios</strong><p>Pregunta por cobertura y costo.</p></article>
+      <article><span>💬</span><strong>Pedido fácil</strong><p>Confirma por WhatsApp.</p></article>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-heading">
+        <div><p class="eyebrow">HECHO PARA DISFRUTAR</p><h2>Nuestro menú</h2><p>Elige tus favoritos y agrégalos al pedido.</p></div>
+        <span class="menu-count" id="menuCount">0 productos en tu pedido</span>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <!-- Los productos se generan desde app.js -->
+      </div>
+    </section>
+
+    <section class="order-section section" id="pedido">
+      <div class="section-heading">
+        <div><p class="eyebrow">CASI LISTO</p><h2>Tu pedido</h2><p>Revisa los productos y completa tus datos.</p></div>
+      </div>
+      <div class="order-layout">
+        <div class="cart-panel">
+          <div id="cartItems" class="cart-items"><p class="empty-cart">Todavía no has agregado productos.</p></div>
+          <div class="cart-total"><span>Total de productos</span><strong id="cartTotal">$ 0</strong></div>
+          <button class="text-button" id="clearCart" type="button">Vaciar pedido</button>
+        </div>
+        <form id="orderForm" class="customer-form">
+          <label for="customerName">Tu nombre *</label>
+          <input id="customerName" name="customerName" type="text" placeholder="Ej. Carlos" required maxlength="70">
+
+          <label for="orderType">Tipo de pedido *</label>
+          <select id="orderType" name="orderType" required>
+            <option value="Domicilio">Domicilio</option>
+            <option value="Recoger en el local">Recoger en el local</option>
+          </select>
+
+          <div id="addressWrap">
+            <label for="customerAddress">Dirección del domicilio *</label>
+            <input id="customerAddress" name="customerAddress" type="text" placeholder="Dirección y barrio" maxlength="150">
+          </div>
+
+          <label for="customerNotes">Notas adicionales</label>
+          <textarea id="customerNotes" name="customerNotes" rows="3" placeholder="Ej. Sin salsa, indicaciones para llegar..." maxlength="300"></textarea>
+
+          <button class="button button-green full-button" type="submit">Enviar pedido por WhatsApp</button>
+          <p class="form-help">WhatsApp se abrirá con el resumen preparado. Debes pulsar “Enviar” en WhatsApp para confirmar el pedido con el negocio.</p>
+          <p id="formMessage" class="form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="about-section" id="nosotros">
+      <div class="about-image" role="img" aria-label="Pollo asado servido con acompañamientos"></div>
+      <div class="about-copy"><p class="eyebrow">SOBRE NOSOTROS</p><h2>Compartir sabe mejor</h2><p>En El Pollo Feliz creemos que una buena comida reúne a las personas. Preparamos opciones para almuerzos, reuniones y momentos en familia.</p><p class="demo-note">Reemplaza este texto por la historia real del negocio.</p><a class="button button-yellow" href="#menu">Elegir productos</a></div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div><p class="eyebrow">¿DÓNDE ESTAMOS?</p><h2>Contacto y horarios</h2><p><strong>Dirección:</strong> <span id="businessAddress">Agrega aquí la dirección del negocio</span></p><p><strong>Horario:</strong> Lunes a domingo, 11:00 a. m. – 10:00 p. m. (editar según corresponda)</p><p><strong>Teléfono / WhatsApp:</strong> <span id="businessPhone">Configura el número en app.js</span></p></div>
+      <div class="contact-card"><span class="contact-icon">📍</span><h3>¿Quieres hacer un pedido?</h3><p>Arma tu pedido en esta página y envíanoslo por WhatsApp.</p><a class="button button-green" href="#pedido">Ir a mi pedido</a></div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#inicio"><span class="brand-icon">🍗</span><span><strong>El Pollo Feliz</strong><small>ASADERO</small></span></a><p>© <span id="year"></span> El Pollo Feliz. Sitio de demostración.</p><a href="#inicio">Volver arriba ↑</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
