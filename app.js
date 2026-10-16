@@ -12,7 +12,7 @@ const products = [
     name: "Pollo asado entero",
     description: "Pollo asado para compartir.",
     price: 35000,
-    emoji: "🍗",
+    emoji: "",
     image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=700&q=80"
   },
   {
@@ -20,7 +20,7 @@ const products = [
     name: "1/4 de pollo",
     description: "Porción individual con acompañamiento.",
     price: 13000,
-    emoji: "🍗",
+    emoji: "",
     image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=700&q=80"
   },
   {
@@ -36,7 +36,7 @@ const products = [
     name: "Combo familiar",
     description: "Opción para compartir en familia.",
     price: 70000,
-    emoji: "👨‍👩‍👧‍👦",
+    emoji: "",
     image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"
   },
   {
@@ -44,7 +44,7 @@ const products = [
     name: "Papas a la francesa",
     description: "Porción de papas crocantes.",
     price: 8000,
-    emoji: "🍟",
+    emoji: "",
     image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80"
   },
   {
@@ -52,7 +52,7 @@ const products = [
     name: "Gaseosa personal",
     description: "Bebida fría para acompañar.",
     price: 4000,
-    emoji: "🥤",
+    emoji: "",
     image: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?auto=format&fit=crop&w=700&q=80"
   },
   {
@@ -60,7 +60,7 @@ const products = [
     name: "Arepa rellena",
     description: "Arepa con pollo y queso.",
     price: 8000,
-    emoji: "🫓",
+    emoji: "",
     image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80"
   },
   {
@@ -68,7 +68,7 @@ const products = [
     name: "Ensalada de la casa",
     description: "Acompañamiento fresco.",
     price: 6000,
-    emoji: "🥗",
+    emoji: "",
     image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80"
   }
 ];
