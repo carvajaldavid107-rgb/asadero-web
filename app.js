@@ -200,7 +200,7 @@ orderForm.addEventListener("submit", event => {
 
   // Cambia BUSINESS.whatsapp por el número real antes de publicar.
   const phone = BUSINESS.whatsapp.replace(/\D/g, "");
-  if (!phone || phone === "573003980400" || phone.length < 10) {
+  if (!phone || phone.length < 10) {
     formMessage.textContent = "La página todavía no tiene el WhatsApp real del negocio. Configúralo en app.js antes de publicar.";
     return;
   }
